@@ -22,6 +22,12 @@ function loadIndex() {
                     cell1.innerHTML = course.dept;
                     cell2.innerHTML = course.courseNum;
                     cell3.innerHTML = course.courseName;
+                    let detailsCell = row.insertCell(3);
+                    let anchor = document.createElement("a");
+                    anchor.href = `details.html?cid=${course.id}`;
+                    anchor.text = "See details";  
+                    detailsCell.appendChild(anchor);
+
             }
         });
 }
