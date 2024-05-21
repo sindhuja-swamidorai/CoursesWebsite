@@ -8,11 +8,10 @@ function fetchDetails () {
     let cid = -1;
     if (urlParams.has("cid") === true)
     {
-       cid = urlParams.get("cid")
+       cid = urlParams.get("cid");
        // call a method that fetches this course
        getCourse(cid);
-    }
-         
+    }         
 }
 
 function getCourse(cid) {
@@ -40,3 +39,5 @@ function getCourse(cid) {
         // handle errors that occurred during the fetch request
       });
   }
+
+

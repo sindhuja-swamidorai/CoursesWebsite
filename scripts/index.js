@@ -27,6 +27,11 @@ function loadIndex() {
                     anchor.href = `details.html?cid=${course.id}`;
                     anchor.text = "See details";  
                     detailsCell.appendChild(anchor);
+                    let deleteCell = row.insertCell(4);
+                    anchor = document.createElement("a");
+                    anchor.href = `confirm-delete.html?cid=${course.id}`;
+                    anchor.text = "Delete Course";  
+                    deleteCell.appendChild(anchor);
 
             }
         });

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Add new course</title>
+    <script src="scripts/common.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h4>Course Details </h4>
+        <form action="common.html" class="col-md-6>
+        <label for="dept" class="form-label">Department</label>
+        <input type="text" name="dept" id="dept" class="form-control">
+        <label for="courseNum" class="form-label">Course Number</label>
+        <input type="number" name="courseNum" id="courseNum" class="form-control">
+        <label for="courseName" class="form-label">Course Name</label>
+        <input type="text" name="courseName" id="courseName" class="form-control">
+        <label for="instructor" class="form-label">Instructor</label>
+        <input type="text" name="instructor" id="instructor" class="form-control">
+        <label for="startDate" class="form-label">Start Date</label>
+        <input type="text" name="startDate" id="startDate" class="form-control">
+        <label for="numDays" class="form-label">Number of days</label>
+        <input type="number" name="numDays" id="numDays" class="form-control">
+        <!--label for="cid" class="form-label">ID</label>
+        <input type="number" name="cid" id="cid" class="form-control"-->
+        <br>
+        <input type="submit" name="ADD" value="ADD"> &nbsp 
+        <input type="submit" name="CANCEL" value="CANCEL">
+        <br/>
+        <br/>
+        </form>
+    </div>
+
+    <div id="courseContainerDiv"></div>
+</body>
+</html>
